@@ -13,6 +13,7 @@ After playing around with the Telegram API, I hacked together a quick Bot to sta
 This is the result of a few weeks of tinkering in hopes of making something more extensible.
 
 If this helps at least one other person work faster then I'll be content.
+You can see how I use this framework [here](https://github.com/ajfigueroa/alex-pug-bot).
 
 # Installation
 
@@ -99,6 +100,9 @@ end
 
 Pug::Bot.run
 ```
+
+Note: If you want to interact with Telegram sans a local script, you'll need to deploy to a server such as Heroku.
+
 
 ## Terminal
 
