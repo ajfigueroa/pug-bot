@@ -2,15 +2,17 @@
 
 An automation framework for repetitive dev tasks
 
-# Motivation
+# Background
 
-There were a lot of tasks that I found myself repeating during my dev work.
-I wanted to use something that was device/editor agnostic and could handle multiline arguments with no hassle.
+Disclaimer: I come from an iOS background so forgive my not-so idomatic Ruby.
+
+There were a lot of tasks that I found myself repeating during dev work.
+I wanted something that was device/editor agnostic and could handle multiline arguments with no hassle.
+
 After playing around with the Telegram API, I hacked together a quick Bot to start this automation.
 This is the result of a few weeks of tinkering in hopes of making something more extensible.
 
 If this helps at least one other person work faster then I'll be content.
-Also, I come from an iOS background so forgive my not-so idomatic Ruby.
 
 # Installation
 
@@ -67,7 +69,7 @@ end
 Once you've defined your action you just need a way to interact with it.
 There are two ways to interact with pug-bot: Telegram and Terminal.
 
-### Telegram Bot Setup
+## Telegram Bot Setup
 
 To use Telegram we need to first setup a Telegram Bot. Thankfully, Telegram makes this a nice experience. Skip this and the next section if you want to just use Terminal.
 
@@ -121,14 +123,15 @@ For the `HelloWorldAction`, that would be `0` as shown below:
 
 ## Telegram
 
-<img src="assets/telegram_example.png" width=60% height=60%>
+![Telegram Example](assets/telegram_example.png)
 
 ## Terminal
 
-<img src="assets/terminal_example.png" width=60% height=60%>
+![Terminal Example](assets/terminal_example.png)
+
 
 # Hints
 
 Hints can be provided via entering: `help` or `list`.
 
-<img src="assets/terminal_hints.png" width=60% height=60%>
+![Terminal Hints](assets/terminal_hints.png)
