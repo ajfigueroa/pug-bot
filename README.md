@@ -4,7 +4,7 @@ An automation framework for repetitive dev tasks
 
 # Background
 
-Disclaimer: I come from an iOS background so forgive my not-so idomatic Ruby.
+I come from an iOS background so forgive my not-so idiomatic Ruby.
 
 There were a lot of tasks that I found myself repeating during dev work.
 I wanted something that was device/editor agnostic and could handle multiline arguments with no hassle.
@@ -118,7 +118,7 @@ Pug::Bot.run
 
 # Interactions
 
-Every `Action` that pug-bot handles is enumerated. To call your command, you just need to type in the number that it corresponds to.
+Every `Action` that pug-bot handles are enumerated. To call your command, you just need to type in the number that it corresponds to.
 For the `HelloWorldAction`, that would be `0` as shown below:
 
 ## Telegram
