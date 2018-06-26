@@ -10,6 +10,8 @@ I wanted something that was device/editor agnostic and could handle multiline ar
 After playing around with the Telegram API, I hacked together a quick Bot to start this automation.
 This is the result of a few weeks of tinkering in hopes of making something more extensible.
 
+This bot was originally designed to work with Telegram but I added support for a command line interface when I wanted something that also worked offline as well.
+
 You can see how I use this framework [here](https://github.com/ajfigueroa/alex-pug-bot).
 
 # Installation
