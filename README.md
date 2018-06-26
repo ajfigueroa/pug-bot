@@ -4,22 +4,19 @@ An automation framework for repetitive dev tasks
 
 # Background
 
-I come from an iOS background so forgive my not-so idiomatic Ruby.
-
 There were a lot of tasks that I found myself repeating during dev work.
 I wanted something that was device/editor agnostic and could handle multiline arguments with no hassle.
 
 After playing around with the Telegram API, I hacked together a quick Bot to start this automation.
 This is the result of a few weeks of tinkering in hopes of making something more extensible.
 
-If this helps at least one other person work faster then I'll be content.
 You can see how I use this framework [here](https://github.com/ajfigueroa/alex-pug-bot).
 
 # Installation
 
 Add the following to your `Gemfile` and then run `bundle install`
 
-```
+```ruby
 gem 'pug-bot'
 ```
 
@@ -101,7 +98,7 @@ end
 Pug::Bot.run
 ```
 
-Note: If you want to interact with Telegram sans a local script, you'll need to deploy to a server such as Heroku.
+**Note: If you want to interact with Telegram without a script, you'll need to deploy to a server such as Heroku.**
 
 
 ## Terminal
