@@ -102,7 +102,6 @@ Pug::Bot.run
 
 **Note: If you want to interact with Telegram without a script, you'll need to deploy to a server such as Heroku.**
 
-
 ## Terminal
 
 To setup Terminal, you just need to specify the type as Terminal
@@ -132,9 +131,18 @@ For the `HelloWorldAction`, that would be `0` as shown below:
 
 ![Terminal Example](assets/terminal_example.png)
 
-
 # Hints
 
 Hints can be provided via entering: `help` or `list`.
 
 ![Terminal Hints](assets/terminal_hints.png)
+
+# How it works
+
+This flowchart outlines how an `Action` gets handled by pug-bot
+
+![Action Flow](assets/pug_bot_action_flowchart.png)
+
+# Documentation
+
+Documentation can be generated via `rake document`. You can view the resulting documentation by loading the html files from the newly generated `doc/` folder in a browser.
