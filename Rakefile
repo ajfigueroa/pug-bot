@@ -5,7 +5,7 @@ require 'rspec/core/rake_task'
 
 RSpec::Core::RakeTask.new(:spec)
 
-task default: :flightcheck
+task :default => [:cop, :spec]
 
 desc 'Run Rubocop check for the gem'
 task :cop do
