@@ -21,7 +21,7 @@ module Pug
       @handler = MessageHandler.default(actions)
     end
 
-    # Starts the handling all messages received via the Client
+    # Starts the handling of all messages received via the Client
     # @return [void]
     def start
       @client.listen do |message|
