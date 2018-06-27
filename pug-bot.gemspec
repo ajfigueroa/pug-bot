@@ -16,8 +16,7 @@ Gem::Specification.new do |s|
   s.files         = Dir['lib/**/*'] + %w(Gemfile LICENSE README.md Rakefile pug-bot.gemspec)
   s.test_files    = Dir['spec/**/*']
   s.require_paths = ['lib']
-  s.bindir        = 'exe'
-  s.executables   = s.files.grep(%r{^exe/}) { |f| File.basename(f) }
+  s.executables   << 'pug'
 
   s.required_ruby_version = '>= 2.3'
 
