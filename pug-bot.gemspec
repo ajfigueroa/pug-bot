@@ -16,6 +16,9 @@ Gem::Specification.new do |s|
   s.files         = Dir['lib/**/*'] + %w(Gemfile LICENSE README.md Rakefile pug-bot.gemspec)
   s.test_files    = Dir['spec/**/*']
   s.require_paths = ['lib']
+  s.bindir        = 'exe'
+  s.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
+
   s.required_ruby_version = '>= 2.3'
 
   s.add_runtime_dependency 'telegram-bot-ruby', '~> 0.8.6', '>= 0.8.6'
