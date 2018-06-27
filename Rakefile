@@ -5,15 +5,11 @@ require 'rspec/core/rake_task'
 
 RSpec::Core::RakeTask.new(:spec)
 
-task default: :spec
+task default: :flightcheck
 
 desc 'Run Rubocop check for the gem'
 task :cop do
   sh %{ rubocop }
-end
-
-desc 'Verify everything is good before merge'
-task :flightcheck => [:cop, :spec] do
 end
 
 desc 'Generate documentation'
