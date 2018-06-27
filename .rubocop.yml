@@ -1,9 +1,11 @@
 AllCops:
   TargetRubyVersion: 2.3.6
   Exclude:
+    - 'vendor/**/*'
+    - '.git/**/*'
     - 'pug-bot.gemspec'
-    - Rakefile
-    - bin/pug
+    - 'Rakefile'
+    - 'bin/pug'
 Metrics/BlockLength:
   Exclude:
     - 'spec/**/*.rb'
@@ -14,9 +16,6 @@ Style/Documentation:
 Style/FrozenStringLiteralComment:
   Exclude:
     - 'Gemfile'
-Style/HashSyntax:
-  Exclude:
-
 Style/MixinUsage:
   Exclude:
     - 'spec/**/*.rb'
