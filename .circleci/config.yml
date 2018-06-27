@@ -13,6 +13,7 @@ jobs:
       - run:
           name: install dependencies
           command: |
+            bundle exec ruby lib/pug.rb
             bundle install --jobs=4 --retry=3 --path vendor/bundle
       - save_cache:
           paths:
