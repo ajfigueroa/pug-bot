@@ -20,10 +20,10 @@ Gem::Specification.new do |s|
 
   s.required_ruby_version = '>= 2.3'
 
-  s.add_runtime_dependency 'telegram-bot-ruby', '~> 0.8.6', '>= 0.8.6'
+  s.add_runtime_dependency 'telegram-bot-ruby', '~> 0.8.6'
 
-  s.add_development_dependency 'rspec', '~> 3.7.0', '>= 3.7.0'
-  s.add_development_dependency 'rubocop', '~> 0.53.0', '>= 0.53.0'
-  s.add_development_dependency 'yard', '~> 0.9.2', '>= 0.9.2'
-  s.add_development_dependency 'rake', '~> 10.4.2', '>= 10.4.2'
+  s.add_development_dependency 'rspec', '~> 3.7.0'
+  s.add_development_dependency 'rubocop', '~> 0.53.0'
+  s.add_development_dependency 'yard', '~> 0.9.2'
+  s.add_development_dependency 'rake', '~> 10.4.2'
 end

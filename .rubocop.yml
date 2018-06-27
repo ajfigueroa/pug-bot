@@ -1,14 +1,12 @@
 AllCops:
   TargetRubyVersion: 2.3.6
+  Exclude:
+    - 'pug-bot.gemspec'
+    - Rakefile
+    - bin/pug
 Metrics/BlockLength:
   Exclude:
-    - 'Rakefile'
-    - '**/*.rake'
     - 'spec/**/*.rb'
-    - 'pug-bot.gemspec'
-Metrics/LineLength:
-  Exclude:
-    - 'pug-bot.gemspec'
 Style/Documentation:
   Exclude:
     - 'example/**/*.rb'
@@ -16,22 +14,12 @@ Style/Documentation:
 Style/FrozenStringLiteralComment:
   Exclude:
     - 'Gemfile'
-    - 'pug-bot.gemspec'
-    - 'Rakefile'
 Style/HashSyntax:
   Exclude:
-    - 'Rakefile'
+
 Style/MixinUsage:
   Exclude:
     - 'spec/**/*.rb'
-    - 'pug-bot.gemspec'
-Style/PercentLiteralDelimiters:
-  Exclude:
-    - 'pug-bot.gemspec'
-    - 'Rakefile'
 Style/RegexpLiteral:
   EnforcedStyle: slashes
   AllowInnerSlashes: true
-Style/SymbolArray:
-  Exclude:
-    - 'Rakefile'
