@@ -1,18 +1,11 @@
 # frozen_string_literal: true.
 
-require 'pug/version'
-require 'yard'
+require 'bundler/gem_tasks'
+require 'rspec/core/rake_task'
 
-desc 'Prepares and installs gem'
-task :prepare do
-  sh %{ gem build pug-bot.gemspec }
-  sh %{ gem install pug-bot-#{Pug::VERSION}.gem }
-end
+RSpec::Core::RakeTask.new(:spec)
 
-desc 'Run tests for the gem'
-task :test do
-  sh %{ rspec spec }
-end
+task default: :spec
 
 desc 'Run Rubocop check for the gem'
 task :cop do
@@ -20,7 +13,7 @@ task :cop do
 end
 
 desc 'Verify everything is good before merge'
-task :flightcheck => [:cop, :test] do
+task :flightcheck => [:cop, :spec] do
 end
 
 desc 'Generate documentation'
