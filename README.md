@@ -1,4 +1,6 @@
 # pug-bot
+[![Gem Version](https://badge.fury.io/rb/pug-bot.svg)](https://badge.fury.io/rb/pug-bot)
+[![Build Status](https://travis-ci.org/ajfigueroa/pug-bot.svg?branch=master)](https://travis-ci.org/ajfigueroa/pug-bot)
 
 An automation framework for repetitive dev tasks
 
