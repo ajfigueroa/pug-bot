@@ -53,13 +53,6 @@ describe Pug::Bot do
         @bot.start
         expect(@client.sent_messages).to eq([expected0, expected1])
       end
-
-      it 'should respond to an action call with inputs required' do
-        @client.enqueue_message('1')
-        expected = Pug::Strings.enter_inputs('Action1')
-        @bot.start
-        expect(@client.last_sent_message).to eq(expected)
-      end
     end
 
     describe 'when a command is running' do
