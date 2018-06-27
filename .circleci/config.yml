@@ -20,9 +20,9 @@ jobs:
             - ./vendor/bundle
           key: v1-dependencies-{{ checksum "Gemfile.lock" }}
       - run:
-        name: run rubcop
-        command: |
-          rake cop
+          name: run rubcop
+          command: |
+            rake cop
       - run:
           name: run tests
           command: |
