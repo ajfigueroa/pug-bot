@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
   s.test_files    = Dir['spec/**/*']
   s.require_paths = ['lib']
   s.bindir        = 'exe'
-  s.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
+  s.executables   = s.files.grep(%r{^exe/}) { |f| File.basename(f) }
 
   s.required_ruby_version = '>= 2.3'
 
