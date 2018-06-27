@@ -1,12 +1,9 @@
 # frozen_string_literal: true.
 
-require 'pug/version'
-require 'yard'
-
 desc 'Prepares and installs gem'
 task :prepare do
   sh %{ gem build pug-bot.gemspec }
-  sh %{ gem install pug-bot-#{Pug::VERSION}.gem }
+  sh %{ gem install pug-bot-0.1.0.gem }
 end
 
 desc 'Run tests for the gem'
