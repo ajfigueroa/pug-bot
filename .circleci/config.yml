@@ -2,12 +2,12 @@ version: 2
 jobs:
   build:
     docker:
-    - image: circleci/ruby:2.3.6-node-browsers
+      - image: circleci/ruby:2.3.6-node-browsers
     working_directory: ~/repo
     steps:
       - checkout
       - restore_cache:
-        keys:
+          keys:
           - v1-dependencies-{{ checksum "Gemfile.lock" }}
           - v1-dependencies-
       - run:
