@@ -10,12 +10,14 @@ describe Pug::Bot do
       @client = MockClient.new
       action0 = MockAction.new('Action0', false, 'Output0')
       action1 = MockAction.new('Action1', true, 'Output1')
-      @bot = Pug::Bot.new(@client, [action0, action1])
+      @actions = [action0, action1]
+      @bot = Pug::Bot.new(@client, @actions)
     end
 
     it 'should respond to "help" command' do
       @client.enqueue_message('help')
-      expected = Pug::Strings.help('list')
+      list_action = Pug::ListAction.new(@actions)
+      expected = Pug::HelpAction.new([list_action]).execute
       @bot.start
       expect(@client.last_sent_message).to eq(expected)
     end

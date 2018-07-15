@@ -32,7 +32,15 @@ module Pug
     end
 
     def self.help(commands)
-      "These are available commands:\n#{commands}"
+      "These are the available commands:\n#{commands}"
+    end
+
+    def self.no_help_commands
+      'There are no available commands.'
+    end
+
+    def self.list_description
+      'Displays all your available pug-bot actions'
     end
   end
 end
