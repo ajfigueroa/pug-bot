@@ -43,16 +43,20 @@ module Pug
     private
 
     def send_telegram_message(message)
-      reply_markup = Telegram::Bot::Types::ReplyKeyboardMarkup.new(
-        keyboard: @keyboard_markup || []
-      )
       perform_with_bot do |bot|
         bot.api.send_message(
           chat_id: @chat_id,
           text: message,
-          reply_markup: reply_markup
+          reply_markup: reply_markup,
+          disable_web_page_preview: true
         )
       end
+    end
+
+    def reply_markup
+      Telegram::Bot::Types::ReplyKeyboardMarkup.new(
+        keyboard: @keyboard_markup || []
+      )
     end
 
     def client
