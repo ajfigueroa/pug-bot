@@ -4,6 +4,8 @@
 
 An automation framework for repetitive dev tasks
 
+**Note** This is not actively maintained as I don't need to use it too much at FB.
+
 # Background
 
 There were a lot of tasks that I found myself repeating during dev work.
